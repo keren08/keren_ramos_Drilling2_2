@@ -14,72 +14,82 @@ $color-boton: rgb(23, 23, 137);
     text-align: center;
 }
 
-.navegador__lista,.destinos__cards{
+.navegador__lista{
     display: flex;
     align-items: center;
+
+    &__items{
+        list-style: none;
+        padding: 1%;
+
+        &__subitem{
+            color: $color-texto;
+
+            &-logo{
+                font-size: 150%;
+                font-weight: 900;
+            }
+        }
+    }
 }
 
 .contenedor{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    flex-direction: column;
-    margin: 2%;
-}
-
-.lista__items{
-    padding: 2%;
-    list-style: none;
-}
-
-.items__subitem-logo{
-    color: $color-texto;
-    font-weight: 900;
-    font-size: 150%;
+    justify-content: center;
 }
 
 
-.items__subitem,.destinos__titulo,.paquetes__titulos,.paquete__titulo{
-    color: $color-texto;
+.destinos{
+
+    &__contenedor{
+
+      margin: 1% 1%;
+
+     }
+
+    &__cards{
+        display: flex;
+
+        &__destino{
+            display: flex;
+            flex-direction: column;
+            margin: 1%;
+        }
+    }
+
 }
 
-.destinos__titulo,.paquetes__titulos,.paquete__titulo{
-margin-left: 1%;
-}
-
-.destinos__lista{
-    width: 100%;
-}
-
-.cards__destino{
-    display: flex;
-    flex-direction: column;
-    padding: 1%;
-}
-
-.paquetes__lista{
-    width: 100%;
-    display: flex;
-}
-
-.paquetes__cards{
-    width: 100%;
-    max-width: 200px;
-    margin: 1%;
-}
-.paqutes__img{
-    width: 100%;
-}
-
-.paquete__boton,.card__boton{
+.destinos__cards__destino__boton, .paquetes__lista__card__boton{
     width: 100%;
     background-color: $color-boton;
-    border-color: $color-boton;
     color: aliceblue;
-    font-size: large;
+    border-color: $color-boton;
     margin-top: 1%;
 }
 
-.footer{
-    padding: 2%;
-    color: $color-texto;
+.paquetes{
+    display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+    &__contenedor{
+        width: 75%;
+        text-align: left;
+       }
+  
+      &__lista{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &__card{
+          
+              margin: 1%;
+              width: 10%;
+              &__img{
+                width: 100%;
+              }
+          }
+      }
 }
