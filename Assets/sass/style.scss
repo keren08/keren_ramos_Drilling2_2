@@ -1,0 +1,13 @@
+$color-nav: rgb(105, 217, 232);
+
+*{
+    margin: 0;
+}
+
+.header{
+    background-color: $color-nav;
+}
+
+.navegador__lista{
+    display: flex;
+}
