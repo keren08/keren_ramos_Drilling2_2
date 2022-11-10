@@ -1,13 +1,82 @@
 * {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.header {
+.header, .footer {
   background-color: rgb(105, 217, 232);
+  width: 100%;
+  text-align: center;
 }
 
-.navegador__lista {
+.navegador__lista, .destinos__cards {
   display: flex;
+  align-items: center;
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 2%;
+}
+
+.lista__items {
+  padding: 2%;
+  list-style: none;
+}
+
+.items__subitem-logo {
+  color: rgb(125, 40, 117);
+  font-weight: 900;
+  font-size: 150%;
+}
+
+.items__subitem, .destinos__titulo, .paquetes__titulos, .paquete__titulo {
+  color: rgb(125, 40, 117);
+}
+
+.destinos__titulo, .paquetes__titulos, .paquete__titulo {
+  margin-left: 1%;
+}
+
+.destinos__lista {
+  width: 100%;
+}
+
+.cards__destino {
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
+
+.paquetes__lista {
+  width: 100%;
+  display: flex;
+}
+
+.paquetes__cards {
+  width: 100%;
+  max-width: 200px;
+  margin: 1%;
+}
+
+.paqutes__img {
+  width: 100%;
+}
+
+.paquete__boton, .card__boton {
+  width: 100%;
+  background-color: rgb(23, 23, 137);
+  border-color: rgb(23, 23, 137);
+  color: aliceblue;
+  font-size: large;
+  margin-top: 1%;
+}
+
+.footer {
+  padding: 2%;
+  color: rgb(125, 40, 117);
 }
 
 /*# sourceMappingURL=style.css.map */
