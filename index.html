@@ -11,39 +11,42 @@
     <header class="header">
         <nav class="navegador">
                 <ul class="navegador__lista">
-                <li class="lista__items"><a class="items__subitem items__subitem-logo">Everybody Can Fly</a></li>
-                <li class="lista__items"><a class="items__subitem">Inicio</a></li> 
-                <li class="lista__items"><a class="items__subitem">Nosotros</a></li> 
-                <li class="lista__items"><a class="items__subitem">Vuelos</a></li> 
+                <li class="navegador__lista__items"><a class="navegador__lista__items__subitem navegador__lista__items__subitem-logo">Everybody Can Fly</a></li>
+                <li class="navegador__lista__items"><a class="navegador__lista__items__subitem">Inicio</a></li> 
+                <li class="navegador__lista__items"><a class="navegador__lista__items__subitem">Nosotros</a></li> 
+                <li class="navegador__lista__items"><a class="navegador__lista__items__subitem">Vuelos</a></li> 
                 </ul>
             </nav>
     </header>
     <main class="contenedor">
-        <article class="contenedor__destinos">
-            <section class="destinos__lista">
-            <h2 class="destinos__titulo">Desatinos más buscados</h2>
+            <!--Inicio destinos-->
+        <article class="destinos">
+            <section class="destinos__contenedor">
+            <h2 class="destinos__contenedor__titulo">Desatinos más buscados</h2>
             </section>
             <section class="destinos__cards">
-                <div class="cards__destino">
-                    <img src="Assets/img/montania.jpg" alt="">
-                    <button class="card__boton">Comprar</button>
+                <div class="destinos__cards__destino">
+                    <img class="destinos__cards__destino__img" src="Assets/img/montania.jpg" alt="">
+                    <button class="destinos__cards__destino__boton">Comprar</button>
                 </div>
-                <div class="cards__destino">
-                    <img class="card__img" src="Assets/img/montania.jpg" alt="">
-                    <button class="card__boton">Comprar</button>
+                <div class="destinos__cards__destino">
+                    <img class="destinos__cards__destino__img" src="Assets/img/montania.jpg" alt="">
+                    <button class="destinos__cards__destino__boton">Comprar</button>
                 </div>
-                <div class="cards__destino">
-                    <img class="card__img" src="Assets/img/montania.jpg" alt="">
-                    <button class="card__boton">Comprar</button>
+                <div class="destinos__cards__destino">
+                    <img class="destinos__cards__destino__img" src="Assets/img/montania.jpg" alt="">
+                    <button class="destinos__cards__destino__boton">Comprar</button>
                 </div>
-                <div class="cards__destino">
-                    <img class="card__img" src="Assets/img/montania.jpg" alt="">
-                    <button class="card__boton">Comprar</button>
+                <div class="destinos__cards__destino">
+                    <img class="destinos__cards__destino__img" src="Assets/img/montania.jpg" alt="">
+                    <button class="destinos__cards__destino__boton">Comprar</button>
                 </div>
             </section>
      </article>
-     <article>
-        <section class="paquetes"><h2 class="paquetes__titulos">Paquetes</h2></section>
+          <!-- Fin destinos-->
+        <!-- Inicio paquetes-->
+     <article class="paquetes">
+        <section class="paquetes__contenedor"><h2 class="paquetes__contenedor__titulos">Paquetes</h2></section>
         <section class="paquetes__lista">
             <div class="paquetes__cards">
                 <img class="paqutes__img" src="Assets/img/paisaje.jpg" alt="">
@@ -89,10 +92,33 @@
             </div>  
         </section>
      </article>
+          <!-- Fin paquetes-->
+        <!-- Inicio formulario-->
+          <article class="formulario">
+            <h2 class="formulario__titulo">Contáctanos</h2>
+            <form action="" class="form">
+                <section class="form_input">
+                    <label class="form__input__titulo" for="">Nombre</label>
+                    <input class="form__input__text" type="text" value="">
+               </section>
+
+               <section class="form_input">
+                <label class="form__input__titulo" for="">Email</label>
+                <input class="form__input__text" type="email" value="">
+             </section>
+
+             <section class="form_input">
+                <label class="form__input__titulo" for="">Asunto</label>
+                <textarea class="form__input__textarea" name="" id="" cols="30" rows="10"></textarea>
+             </section>
+            </form>
+          </article>
+             <!-- Fin formulario-->
+
     </main>
 
     <footer class="footer">
-        <h4 class="footer__contact">contáctanos</h4>
+        <h4 class="footer__contact">Todos los derechos reservados</h4>
     </footer>
 </body>
 </html>
